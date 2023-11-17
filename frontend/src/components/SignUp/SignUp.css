@@ -1,0 +1,44 @@
+ 
+*::after,
+*::before {
+  box-sizing: border-box;
+ 
+}
+
+.form-floating {
+  position: relative;
+  width: 20rem;
+  
+}
+
+.form-floating>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  color: grey;
+  z-index: 2;
+  height: 100%;
+  padding: 1rem 0.75rem;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: var(--bs-border-width) solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.form-floating>input:focus+label,
+.form-floating>input:not(:placeholder-shown)+label {
+  transform: translate(0, -1.5rem) scale(0.8);
+  opacity: 0.8;
+}
+
+/* Additional styling for your form */
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

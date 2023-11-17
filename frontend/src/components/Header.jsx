@@ -14,7 +14,7 @@ const Header=()=> {
     <Navbar style={{ backgroundColor: 'rgb(125, 84, 142)' }} expand="lg">
       <Navbar.Brand>
         <Image src={logo} style={{ backgroundColor: 'none' }} width="40" height="30" />
-        <span className="ml-2">Microsoft</span>
+      
       </Navbar.Brand>
       <Navbar.Collapse id="basic-navbar-nav">
    
